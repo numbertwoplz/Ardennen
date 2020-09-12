@@ -11,12 +11,17 @@ namespace Logica
         public int TeBetalen { get; set; }
         public string Naam { get; set; }
         public int Betaald { get; set; }
-        public Persoon(string naam)
+        public Persoon(string naam,int tebetalen,int betaald)
         {
             Naam = naam;
+            TeBetalen = tebetalen;
+            Betaald = betaald;
         }
 
-
+        public void Betaal(int bedrag)
+        {
+            Betaald = Betaald + bedrag;
+        }
         
         public override string ToString()
         {
