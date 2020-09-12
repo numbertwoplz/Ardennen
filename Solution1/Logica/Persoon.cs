@@ -8,12 +8,16 @@ namespace Logica
 {
     public class Persoon
     {
-        String Naam;
-        public Persoon(String naam)
+        public int TeBetalen { get; set; }
+        public string Naam { get; set; }
+        public int Betaald { get; set; }
+        public Persoon(string naam)
         {
             Naam = naam;
         }
 
+
+        
         public override string ToString()
         {
             return "Mijn naam is " + this.Naam ;
